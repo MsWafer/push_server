@@ -14,7 +14,6 @@ router.post("/", async (req, res) => {
     sender.send(
       message,
       { registrationTokens: req.body.tokens },
-      5,
       function (err, response) {
         if (err) {
           console.error(err);
